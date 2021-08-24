@@ -1,0 +1,10 @@
+<h1>TinyMCE 5 Angular Demo</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <editor
+   formControlName="description"
+    [init]="config"
+  ></editor>
+  <button type="submit" class="" id="p-btn">Sign In</button>
+</form>
+<router-outlet></router-outlet>
